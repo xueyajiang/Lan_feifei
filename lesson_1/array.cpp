@@ -3,7 +3,28 @@ using namespace std;
 int main()
 {
 	/* 本次课主要讲解：array 数组 */
-	int gifts[8] = {1, 2, 3, 4, 6, 8, 10, 12};
+	int gifts[8]; //= {1, 2, 3, 4, 6, 8, 10, 12};
+/*	gifts[0] = 1;
+	gifts[1] = 2;
+	gifts[2] = 3;
+	gifts[3] = 4;
+	gifts[4] = 6;
+	gifts[5] = 8;
+	gifts[6] = 10;
+	gifts[7] = 12;*/
+//	cin >> gifts[0];
+//	cin >> gifts[1];
+	for (int i = 0; i < 8; i++)
+	{
+		cin >> gifts[i];
+	}
+	
+	for (int i = 7; i >= 0; i--)
+	{
+		cout << gifts[i] << " ";
+	}
+	
+	
 	int n;
 	int arr[14];
 	while (cin >> n)

@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
-int const MAX = 10001;
+long long const MAX = 100001;
 int main()
 {
-	int num;
+	long long num;
 	bool lightStatus[MAX];
-	int i, j;
-	int count = 0;
+	long long i, j;
+	long long count = 0;
 	cin >> num;
 	for (i = 1; i <= num; i++)
 	{
@@ -29,9 +29,11 @@ int main()
 	{
 		if (lightStatus[i] == true)
 		{
+			cout << i << " ";
 			count++;
 		}
 	}
+	cout << endl;
 	cout << count << endl;
 	return 0;
 }
